@@ -58,6 +58,7 @@ module Thunderbuddies
         end
       end
     rescue OpenURI::HTTPError
+      puts "OpenURI got an error, possibly thunder image is not yet ready. Try later"
       exit(1)
     end
     
@@ -72,12 +73,14 @@ module Thunderbuddies
       `convert -crop 50x50+300+100 #{@image} #{cropped_image}`
       cropped_image
     rescue Errno::ENOENT
+      puts "Imagemagick is required http://www.imagemagick.org/script/binary-releases.php"
       exit(1)
     end
     
     def identify_image(cropped_image)
       `identify -verbose #{cropped_image} | grep Histogram -A 10 | grep -E '#FAF500|#FF2800|#FFAA00|#C800FF'`
     rescue Errno::ENOENT
+      puts "Imagemagick is required http://www.imagemagick.org/script/binary-releases.php"
       exit(1)
     end
     

@@ -26,7 +26,7 @@ Or install it yourself as:
 
 ## Usage
 
-Use an executable `thunderbuddies` to check the level of the thunder alert or to shut your computer down immediately if you are scared of it.
+Use an executable `thunderbuddies` to check the level of the thunder alert or to shut your computer down immediately if you are scared of it. Use `cron` or other scheduling tools to repeat and ready for it.
 
 You can specify two arguments for `thunderbuddies level`, the first is for the name of your location and the last for the path to the directory to save the image of the thunder forecast.
 

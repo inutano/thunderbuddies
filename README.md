@@ -52,3 +52,10 @@ The level of thunder alert is an integer from 0 to 4, default parameter is 4. De
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/inutano/thunderbuddies.
 
+## License
+
+"THE BEER-WARE LICENSE" (Revision 42): [inutano@gmail.com](mailto:inutano@gmail.com) is contributing to this project. As long as you retain this notice you can do whatever you want with this stuff. If we meet some day, and you think this stuff is worth it, you can buy me a beer in return.
+
+## Acknowledgement
+
+I would like to thank Seth MacFarlane and all the clues of the movie [Ted](http://www.imdb.com/title/tt1637725/) for great inspirations. I still do not understand why Mila was missing on ted 2 though.

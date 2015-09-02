@@ -46,7 +46,7 @@ $ sudo thunderbuddies halt 3 Asgard $HOME/tmp
 
 The level of thunder alert is an integer from 0 to 4, default parameter is 4. Default parameter of the image directory is also `/tmp`.
 
-**WARNING AGAIN**: You do not have to worry about specifying your location. When our supercomputer system in Mishima goes down, your computer will follow no matter how good the weather is on your place.
+**WARNING AGAIN**: You do not have to worry about specifying your location. When our supercomputer system in Mishima goes down, your computer will follow no matter how good the weather is at your place.
 
 ## Contributing
 

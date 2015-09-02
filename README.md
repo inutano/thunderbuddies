@@ -1,8 +1,6 @@
 # Thunderbuddies
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/thunderbuddies`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Thunderbuddies are powerful tools to protect your server from blackout by thunders. Thunderbuddies tell your computer that a thunderstorm is coming and shut it down before it crashes. Please read the usage below carefully since currently features are limited.
 
 ## Installation
 
@@ -22,15 +20,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Use an executable `thunderbuddies` to check the level of the thunder alert or to shut your computer down immediately if you are scared of it.
 
-## Development
+You can specify two arguments for `thunderbuddies level`, the first is for the name of your location and the last for the path to the directory to save the image of the thunder forecast.
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment. Run `bundle exec thunderbuddies` to use the gem in this directory, ignoring other installed copies of this gem.
+```ruby
+thunderbuddies level Tokyo $HOME/tmp
+```
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+**WARNING**: Currently this is the experimental, so you can specify your location but it is ignored. If a thunder is coming to Mishima, where the [largest supercomputer system for the genomic science in Japan](http://sc.ddbj.nig.ac.jp/) is located, your computer will be shutting down regardless the weather on your location. I appreciate your sympathy.
+
+You can also specify three arguments for `thunderbuddies halt`; threshold of the alert level, your location, and the path to the directory to save the image. You need to run this command with root permission to access the shutdown command.
+
+```ruby
+sudo thunderbuddies halt 4 Asgard $HOME/tmp
+```
+
+**WARNING AGAIN**: You do not have to worry about specifying your location. When our supercomputer system in Mishima goes down, your computer will follow no matter how good the weather is on your place. 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/thunderbuddies.
+Bug reports and pull requests are welcome on GitHub at https://github.com/inutano/thunderbuddies.
 

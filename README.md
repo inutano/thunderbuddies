@@ -1,5 +1,7 @@
 # Thunderbuddies
 
+[![thunderbuddies](http://img.youtube.com/vi/G9PnNW56bp0/0.jpg)](http://www.youtube.com/watch?v=G9PnNW56bp0)
+
 Thunderbuddies are powerful tools to protect your server from blackout by thunders. Thunderbuddies tell your computer that a thunderstorm is coming and shut it down before it crashes. Please read the usage below carefully since currently features are limited.
 
 ## Installation

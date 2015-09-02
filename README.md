@@ -4,6 +4,10 @@
 
 Thunderbuddies are powerful tools to protect your server from blackout by thunders. Thunderbuddies tell your computer that a thunderstorm is coming and shut it down before it crashes. Please read the usage below carefully since currently features are limited.
 
+## Requisites
+
+- [ImageMagick](http://www.imagemagick.org/script/binary-releases.php)
+
 ## Installation
 
 Add this line to your application's Gemfile:

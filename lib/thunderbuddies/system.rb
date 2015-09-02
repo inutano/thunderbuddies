@@ -14,7 +14,7 @@ module Thunderbuddies
       def emergency?(level, location, dir)
         image = Thunderbuddies::Image.new(location, dir)
         current_level = image.get_thunder_level
-        current_level >= level
+        current_level >= level.to_i
       end
       
       def shutdown

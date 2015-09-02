@@ -58,4 +58,4 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/inutan
 
 ## Acknowledgement
 
-I would like to thank Seth MacFarlane and all the clues of the movie [Ted](http://www.imdb.com/title/tt1637725/) for great inspirations. I still do not understand why Mila was missing on ted 2 though.
+I would like to thank to the engineering team of NIG Supercomputer system for the original idea. I also would like to thank Seth MacFarlane and all the clues of the movie [Ted](http://www.imdb.com/title/tt1637725/) for great inspirations. I still do not understand why Mila was missing on ted 2 though.

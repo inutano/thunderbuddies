@@ -12,6 +12,7 @@ module Thunderbuddies
       @image_dir = get_image_dir(image_base_dir)
       @image     = get_image_fname
     end
+    attr_reader :image
     
     def get_image_fname
       fname    = "thunderbuddies-#{@datetime}.png"

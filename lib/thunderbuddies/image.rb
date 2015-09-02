@@ -2,11 +2,6 @@
 
 require 'open-uri'
 require 'fileutils'
-require 'mkmf'
-
-module MakeMakefile::Logging
-  @logfile = File::NULL
-end
 
 module Thunderbuddies
   class Image
@@ -63,7 +58,7 @@ module Thunderbuddies
         end
       end
     rescue OpenURI::HTTPError
-      exit 1
+      exit(1)
     end
     
     def check_image
@@ -73,15 +68,17 @@ module Thunderbuddies
     end
     
     def convert_image
-      raise if !find_executable('convert')
       cropped_image = "#{@image}.cropped.png"
       `convert -crop 50x50+300+100 #{@image} #{cropped_image}`
       cropped_image
+    rescue Errno::ENOENT
+      exit(1)
     end
     
     def identify_image(cropped_image)
-      raise if !find_executable('identify')
       `identify -verbose #{cropped_image} | grep Histogram -A 10 | grep -E '#FAF500|#FF2800|#FFAA00|#C800FF'`
+    rescue Errno::ENOENT
+      exit(1)
     end
     
     def evaluate(image_info)

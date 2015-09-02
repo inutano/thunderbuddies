@@ -1,3 +1,5 @@
 #!/usr/bin/env ruby
 
 require "thunderbuddies"
+
+Thunderbuddies::CLI.start
